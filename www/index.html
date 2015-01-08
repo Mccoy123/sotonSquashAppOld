@@ -36,25 +36,38 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<title>Squash club app</title> 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-	<script src="jquery-1.7.1.min.js"></script> 	
-	<script src="jquery.mobile-1.1.0"></script>
+	
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.css" />
+	<script src="js/index.js"></script>
+	<script src="jquery-1.11.2"></script>
+	<script src="jquery.mobile-1.4.5"></script> 	
 </head> 
 
     <body> <!-- using the standard template supplied by jquery mobile -->
 	<!-- Start of first page -->
-		<div data-role="page" id="foo">
+		<div data-role="page" data-theme="c" id="page1">
 
-			<div data-role="header">
-				<h1>Foo</h1>
+			<div data-role="header" data-theme="c">
+				<h1>SotonSquashClub App</h1>
 			</div><!-- /header -->
 
+			<div data-role="content" data-theme="a" id="Page1_Content">	
+				<button onClick="showPopup()"> ShowPopUp</button>
+			
+			<!-- jquery mobile template
+			<div data-role="header">
+				<h1>Foo</h1>
+			</div><!-- /header ->
 			<div data-role="content">	
 				<p>I'm first in the source order so I'm shown as the page.</p>		
-				<p>View internal page called <a href="#bar">bar</a></p>	
-			</div><!-- /content -->
+				<p>View internal page called <a href="#bar">bar</a></p>
+			</div>
+			-->
+			
+			<!-- /content -->
 
-			<div data-role="footer">
+			<div data-role="footer" data-theme="c">
 				<h4>Page Footer</h4>
 			</div><!-- /footer -->
 		</div><!-- /page -->

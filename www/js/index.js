@@ -47,3 +47,8 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+function showPopup(){
+	var input = document.getElementById("textInput").value;
+	alert(input);
+}
