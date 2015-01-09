@@ -38,51 +38,53 @@
 	<title>Squash club app</title> 
 	
 	<link rel="stylesheet" href="css/index.css" />
-	<link rel="stylesheet" href="jquery.mobile-1.4.5.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
 	<script src="js/index.js"></script>
-	<script src="jquery-1.11.2"></script>
-	<script src="jquery.mobile-1.4.5"></script> 	
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script> 	
 </head> 
 
     <body> <!-- using the standard template supplied by jquery mobile -->
 	<!-- Start of first page -->
-		<div data-role="page" data-theme="c" id="page1">
+		<div data-role="page" data-theme="c" id="one">
 
 			<div data-role="header" data-theme="c">
-				<h1>SotonSquashClub App</h1>
+				<h1>SotonSquashClub App!!</h1>
 			</div><!-- /header -->
 
-			<div data-role="content" data-theme="a" id="Page1_Content">	
-				<button onClick="showPopup()"> ShowPopUp</button>
-			
-			<!-- jquery mobile template
-			<div data-role="header">
-				<h1>Foo</h1>
-			</div><!-- /header ->
-			<div data-role="content">	
+			<div data-role="content" data-theme="c">	
+				<h2>Home</h2>
+				
 				<p>I'm first in the source order so I'm shown as the page.</p>		
 				<p>View internal page called <a href="#bar">bar</a></p>
+				
+				<input style="text" id="textInput">
+				<button onClick="showPopup()"> ShowPopUp</button>
+				
+				<h3>Show internal pages:</h3>
+				<p><a href="#two" data-role="button">Show page "two"</a></p>
+			
 			</div>
-			-->
 			
 			<!-- /content -->
 
 			<div data-role="footer" data-theme="c">
 				<h4>Page Footer</h4>
 			</div><!-- /footer -->
-		</div><!-- /page -->
+		</div><!-- /end page 1-->
 
 
 		<!-- Start of second page -->
-		<div data-role="page" id="bar">
+		<div data-role="page" id="two">
 
 			<div data-role="header">
-				<h1>Bar</h1>
+				<h1>Page 2 Header</h1>
 			</div><!-- /header -->
 
 			<div data-role="content">	
+				<h2>Page 2</h2>
 				<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my ID is beeing clicked.</p>		
-				<p><a href="#foo">Back to foo</a></p>	
+				<p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Back to page "one"</a></p>	
 			</div><!-- /content -->
 
 			<div data-role="footer">
